@@ -11,9 +11,9 @@ app.get('/v1/explorers', (req, res) => {
   console.log(`Api Explorers GET ALL requests ${new Date()}`)
   console.log(`Getting explorer with id ${req.params.id}`)
   const explorer1 = {id: 1, name: "Carlo"}
-  const explorer2 = {id: 1, name: "Carlo"}
-  const explorer3 = {id: 1, name: "Carlo"}
-  const explorer4 = {id: 1, name: "Carlo"}
+  const explorer2 = {id: 2, name: "Omar"}
+  const explorer3 = {id: 3, name: "Ronaldo"}
+  const explorer4 = {id: 4, name: "Fanny"}
   const explorers = [explorer1, explorer2, explorer3, explorer4]
   res.status(200).json(explorers)
 })
